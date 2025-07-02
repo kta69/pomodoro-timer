@@ -1,37 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
 
 body {
-  background-color: #f8f9fa;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .container {
-  margin-top: 50px;
+  background-color: #2a2a2a;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.5s ease-in-out;
 }
 
-.work {
-  background-color: #f8f9fa;
+.container.work {
+  background-color: #2a2a2a;
 }
 
-.short-break {
-  background-color: #d4edda;
+.container.short-break {
+  background-color: #3a4a3a;
 }
 
-.long-break {
-  background-color: #cce5ff;
+.container.long-break {
+  background-color: #3a3a4a;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #cccccc;
 }
 
 .timer-container {
-  background-color: #ffffff;
+  background-color: #1a1a1a;
   border-radius: 10px;
   padding: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
 .timer {
-  font-size: 6rem;
-  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 8rem;
+  font-weight: 700;
+  color: #00ffcc;
+  text-shadow: 0 0 20px rgba(0, 255, 204, 0.6);
 }
 
 .buttons .btn {
-  margin: 0 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.buttons .btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}
+
+.buttons .btn-secondary {
+  background-color: #6c757d;
+  box-shadow: 0 5px 15px rgba(108, 117, 125, 0.3);
+}
+
+.buttons .btn-secondary:hover {
+  background-color: #545b62;
+  box-shadow: 0 8px 20px rgba(108, 117, 125, 0.4);
 }
